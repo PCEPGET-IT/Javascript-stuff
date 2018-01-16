@@ -1,3 +1,5 @@
 ```javascript 
-if(condition){code} 
+if(condition is true){
+  code
+} 
 ```
