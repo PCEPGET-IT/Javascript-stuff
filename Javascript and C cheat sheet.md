@@ -1,6 +1,6 @@
 Hi everyone! This is the definitive cheat sheet that will cover everything we did in the last two weeks of coding lessons and hopefully make javascript easier to understand.
 
-##Variables
+## Variables
 Variables store information so that you can use information without typing it over and over. Variables also can change throughout your program.
 
 So there are several different types of variables in C and Javascript
@@ -24,7 +24,7 @@ var money = 292.38
 var newstring = "I am a string!"
 ```
 
-##if statements
+## if statements
 ```javascript 
 if(condition is true){
   put code here
