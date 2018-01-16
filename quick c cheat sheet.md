@@ -1,4 +1,4 @@
-Hi everyone! This is the definitive cheat sheet that will cover everything we did in the last two weeks of coding lessons and hopefully make javascript easier to understand.
+The quick cheat sheet
 
 ## Doing Math in C
 * \+ is addition
@@ -213,11 +213,18 @@ In C, you have to tell the computer what value the function will return. These d
 		}
 ```
 
+To use your function, just type it into task main()
+```c
+	turnRight();
+```
+
 If you want your program to return something, then type `return` and the information you want to return to the computer. 
 
 You can return a variable that you've made in the function, this variable is local to the function and not accessible by other parts of the function. Previously, we've been defining global variables, which per the name, are accessible anywhere. 
 
 Returning a value allows the function to share its results with other parts of the code, for example, a function to calculate distance and convert distance into number of tire rotations can pass the number of tire rotations to another function that makes the robot move forward for a certain distance. 
+
+**Important: define your functions before task main()!**
 
 ## parameters
 Functions can also take in inputs. These inputs are called parameters. You just name the parameter and put it into the parantheses of the function. Parameters kind of act like a variable

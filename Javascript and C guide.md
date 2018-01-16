@@ -434,4 +434,24 @@ You can have multiple parameters, just type them out and separate them with a co
 	}
 ```
 
+## Organizing your code
+
+Try to space everything out so it looks nice. Sometimes you get a flash of inspiration, and you just want to code everything. Please still try to indent each new instruction, and you can space out everything nicely later. Although indenting automatically is encouraged.
+
+When should you indent?
+Indent the stuff that is inside {}. So like while loops, if, else, else ifs, functions, etc. 
+
+Also, try to plan your code out before you actually start programming. A good way to do this is through a flow chart, and write instructions in plain English. This is called "Pseudocode".
+
+A really good thing to do is to add comments.
+
+In C, you type `//` for a single line comment.
+You type `/*` and `*/` for a multiline comment.
+
+```c
+	// I am a single line comment!
+	/* I am a multiline comment
+	look at my multi-ness */
+```
+
 Okay, I think that's it, this is the really huge guide, and then the cheatsheet will be posted later. 
