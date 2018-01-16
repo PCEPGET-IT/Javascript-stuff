@@ -43,30 +43,28 @@ char ch = 'a';
 
 Quick math shortcuts for variables:
 ```c
-	int number = 10;
-	number += 10;
-	// is the same as:
-	number = number + 10;
-	
-	number -= 10;
-	// is the same as:
-	number = number - 10;
+int number = 10;
+number += 10;
+// is the same as:
+number = number + 10;
 
-	number *= 2;
-	// is the same as:
-	number = number * 2;
-	
-	number /= 2;
-	// is the same as:
-	number = number / 2;
-	
-	number++;
-	// is the same as:
-	number = number + 1;
+number -= 10;
+// is the same as:
+number = number - 10;
+number *= 2;
+// is the same as:
+number = number * 2;
 
-	number--; 
-	// is the same as:
-	number = number - 1;
+number /= 2;
+// is the same as:
+number = number / 2;
+
+number++;
+// is the same as:
+number = number + 1;
+number--; 
+// is the same as:
+number = number - 1;
 ```
 
 ## Conditionals
@@ -121,10 +119,10 @@ console.log(!false);
 
 If statements only run a block of code if the condition is true. 
 ```javascript 
-		if (condition) {
-			// put code here
-			// only runs if condition is true
-		} 
+if (condition) {
+	// put code here
+	// only runs if condition is true
+} 
 ```
 
 If the condition is false, then the program skips the code inside the curly brackets.
@@ -133,14 +131,14 @@ If the condition is false, then the program skips the code inside the curly brac
 
 Else statements run when the condition in the if statement is false.
 ```javascript 
-		if (condition) {
-			// put code here
-			// only runs if condition is true
-		} 
-		else {
-			// put code here
-			// runs if condition is false		
-		}
+if (condition) {
+	// put code here
+	// only runs if condition is true
+} 
+else {
+	// put code here
+	// runs if condition is false		
+}
 ```
 
 ## else if statements
@@ -148,19 +146,19 @@ Else statements run when the condition in the if statement is false.
 Else if statements run if the condition in the if statement is false, and the condition in the else if is true
 
 ```javascript
-	if (condition1) {
-		// put code here
-		// runs if condition1 is true
-	}
-	else if (condition2) {
-		// put code here
-		// runs if condition2 is true (and condition1 is false)
-	}
-	else {
-		// put code here
-		// runs if nothing else runs
-	}
-	// rest of code runs
+if (condition1) {
+	// put code here
+	// runs if condition1 is true
+}
+else if (condition2) {
+	// put code here
+	// runs if condition2 is true (and condition1 is false)
+}
+else {
+	// put code here
+	// runs if nothing else runs
+}
+// rest of code runs
 ```
 
 ## while loops
@@ -168,9 +166,9 @@ Else if statements run if the condition in the if statement is false, and the co
 While loops do something over and over again until the condition is false. 
 
 ```javascript
-	while (condition) {
-		// run code until condition is false.
-	}
+while (condition) {
+	// run code until condition is false.
+}
 ```
 
 Try not to make the  while loop go on forever, or you'll get an infinite loop.
@@ -179,20 +177,20 @@ Try not to make the  while loop go on forever, or you'll get an infinite loop.
 
 In C:
 ```c
-	for (int i = 0; i < 10; i++){
-		// run code ten times
-	}
+for (int i = 0; i < 10; i++){
+	// run code ten times
+}
 ```
 The for loop can be written as a while loop, but here the variable is local to the for loop which means that other functions can't access the variable. 
 
 This for loop is basically the same thing as this:
 ```c
-	int i = 0;
-	while (i < 10){
-		// do something code wise
-		i += 1;
-		// every time the while loop is run, the variable i increases, so this while loop will only run ten times. 
-	}
+int i = 0;
+while (i < 10){
+	// do something code wise
+	i += 1;
+	// every time the while loop is run, the variable i increases, so this while loop will only run ten times. 
+}
 ```
 This was written using a while loop. 
 
@@ -202,20 +200,20 @@ In C, you have to tell the computer what value the function will return. These d
 * void. void means that the function will return nothing
 
 ```c
-		float distance(){
-				// this function will measure distance as a decimal number
-				return distance;
-		}
-		// Don't forget that you can name your code anything you want.
-		void turnRight(){
-				// turn right
-				// you don't have to return anything. 
-		}
+float distance(){
+	// this function will measure distance as a decimal number
+	return distance;
+}
+// Don't forget that you can name your code anything you want.
+void turnRight(){
+	// turn right
+	// you don't have to return anything. 
+}
 ```
 
 To use your function, just type it into task main()
 ```c
-	turnRight();
+turnRight();
 ```
 
 If you want your program to return something, then type `return` and the information you want to return to the computer. 
@@ -231,25 +229,25 @@ Functions can also take in inputs. These inputs are called parameters. You just 
 
 General form:
 ```c
-	int myNewFunction(parameter1){
-		// you can use the parameter and modify it. 
-		return parameter1;
-	}
+int myNewFunction(parameter1){
+	// you can use the parameter and modify it. 
+	return parameter1;
+}
 ```
 
 Example:
 ```c
-	int addTen(number){
-		return number + 10;
-	}
-	addTen(50);
-	// gives 60
+int addTen(number){
+	return number + 10;
+}
+addTen(50);
+// gives 60
 ```
 
 You can have multiple parameters, just type them out and separate them with a comma.
 
 ```c
-	int addTogether(number1, number2){
-		return number1 + number2;
-	}
+int addTogether(number1, number2){
+	return number1 + number2;
+}
 ```

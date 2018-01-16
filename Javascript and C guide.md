@@ -143,10 +143,10 @@ If the two numbers make the statement true, then the condition is true. Otherwis
 
 In javascript: 
 ```javascript
-		console.log(5 < 4)
-		// false
-		console.log(4 < 5)
-		// true
+console.log(5 < 4)
+// false
+console.log(4 < 5)
+// true
 ```
 
 I was really tempted to use the word "return" so I'll define it here. Return means that the line of code gives that value back. It's kind of like console.log, but for computers. console.log prints out a value for you to see, while return gives the value to the program to use. 
@@ -160,16 +160,16 @@ This could be useful if you're testing variable values to make sure that they me
 Back to our money example. Let's declare two variables, one for our money, and one for the cost of the TV.
 
 ```javascript
-		var money = 400;
-		var TVcost = 200;
+var money = 400;
+var TVcost = 200;
 ```
 
 Now we want to make sure that we have enough money to buy a TV. What do we do?
 
 We can use a greater than or equal comparison!
 ```javascript
-		console.log(money >= TVcost);
-		//gives true
+console.log(money >= TVcost);
+//gives true
 ```
 
 This means that we can buy that TV!
@@ -229,7 +229,7 @@ Is -100 greater than 4? No, or in computerland, false.
 
 Now we can substitute true and false into the expression to make it...
 ```javascript
-		console.log(true || false);
+console.log(true || false);
 ```
 
 Hmmm. So Or means that at least one thing is true, so true or false means that it is true. 
@@ -240,15 +240,15 @@ So let's say that you're buying a TV. According to our earlier example, as long 
 
 Let's define three variables, money, rent, and the cost of the TV:
 ```javascript
-		var money = 600;
-		var rent = 500;
-		var TVcost = 200;
+var money = 600;
+var rent = 500;
+var TVcost = 200;
 ```
 
 Alright, so we want to make sure that we have enough money to buy the TV, so let's get that set up:
 ```javascript
-		console.log(money >= TVcost);
-		// gives true
+console.log(money >= TVcost);
+// gives true
 ```
 
 Now we can add our second condition to the first condition. Our second condition is that we have to have money left over to pay the rent. So the money left over after paying the TV is `money - TVcost` and we want that to be greater than or equal to the rent. So our final condition statement is `money - TVcost >= rent`. 
@@ -256,14 +256,14 @@ Now we can add our second condition to the first condition. Our second condition
 Now we have both of our conditions, now we need to combine the two statements. We should use the AND operator because we only want both things to be true. 
 
 ```javascript
-		console.log(money >= TVcost && money - TVcost >= rent);
-		// gives true
+console.log(money >= TVcost && money - TVcost >= rent);
+// gives true
 ```
 
 To be honest, you could simplify this expression into something like this:
 ```javascript
-		console.log(money - TVcost - rent >= 0);
-		//gives true
+console.log(money - TVcost - rent >= 0);
+//gives true
 ```
 
 I just wanted to show an example of where you could use the boolean operators. With robotic sensors, these boolean operators will be very useful.
@@ -272,10 +272,10 @@ I just wanted to show an example of where you could use the boolean operators. W
 
 If statements only run a block of code if the condition is true. 
 ```javascript 
-		if (condition) {
-			// put code here
-			// only runs if condition is true
-		} 
+if (condition) {
+	// put code here
+	// only runs if condition is true
+} 
 ```
 
 If the condition is false, then the program skips the code inside the curly brackets.
@@ -284,14 +284,14 @@ If the condition is false, then the program skips the code inside the curly brac
 
 Else statements run when the condition in the if statement is false.
 ```javascript 
-		if (condition) {
-			// put code here
-			// only runs if condition is true
-		} 
-		else {
-			// put code here
-			// runs if condition is false		
-		}
+if (condition) {
+	// put code here
+	// only runs if condition is true
+} 
+else {
+	// put code here
+	// runs if condition is false		
+}
 ```
 
 ## else if statements
@@ -299,19 +299,19 @@ Else statements run when the condition in the if statement is false.
 Else if statements run if the condition in the if statement is false, and the condition in the else if is true
 
 ```javascript
-	if (condition1) {
-		// put code here
-		// runs if condition1 is true
-	}
-	else if (condition2) {
-		// put code here
-		// runs if condition2 is true (and condition1 is false)
-	}
-	else {
-		// put code here
-		// runs if nothing else runs
-	}
-	// rest of code runs
+if (condition1) {
+	// put code here
+	// runs if condition1 is true
+}
+else if (condition2) {
+	// put code here
+	// runs if condition2 is true (and condition1 is false)
+}
+else {
+	// put code here
+	// runs if nothing else runs
+}
+// rest of code runs
 ```
 
 ## while loops
@@ -319,9 +319,9 @@ Else if statements run if the condition in the if statement is false, and the co
 While loops do something over and over again until the condition is false. 
 
 ```javascript
-	while (condition) {
-		// run code until condition is false.
-	}
+while (condition) {
+	// run code until condition is false.
+}
 ```
 
 Try not to make the  while loop go on forever, or you'll get an infinite loop.
@@ -330,27 +330,27 @@ Try not to make the  while loop go on forever, or you'll get an infinite loop.
 
 In javascript:
 ```javascript
-	for (var i = 0; i < 10; i++){
-		// run code for a certain number of times
-		// in this example, this code will run 10 times.
-	}
+for (var i = 0; i < 10; i++){
+	// run code for a certain number of times
+	// in this example, this code will run 10 times.
+}
 ```
 In C:
 ```c
-	for (int i = 0; i < 10; i++){
-		// run code ten times
-	}
+for (int i = 0; i < 10; i++){
+	// run code ten times
+}
 ```
 The for loop can be written as a while loop, but here the variable is local to the for loop which means that other functions can't access the variable. 
 
 This for loop is basically the same thing as this:
 ```javascript
-	var i = 0;
-	while (i < 10){
-		// do something code wise
-		i += 1;
-		// every time the while loop is run, the variable i increases, so this while loop will only run ten times. 
-	}
+var i = 0;
+while (i < 10){
+	// do something code wise
+	i += 1;
+	// every time the while loop is run, the variable i increases, so this while loop will only run ten times. 
+}
 ```
 This was written using a while loop. 
 
@@ -361,12 +361,11 @@ It's kind of like how we use a variable to represent data that we don't want to 
 
 In javascript, you just type:
 ```javascript
-		function yourFunctionName(){
-				// insert code here
-
-				// OPTIONAL:
-				return value;
-		}
+function yourFunctionName(){
+	// insert code here
+	// OPTIONAL:
+	return value;
+}
 ```
 
 You can name your function whatever you want, just remember to put () after the function name. 
@@ -376,29 +375,29 @@ If you want your program to return something, then type `return` and the informa
 You can return a variable that you've made in the function, this variable is local to the function and not accessible by other parts of the function. Previously, we've been defining global variables, which per the name, are accessible anywhere. 
 
 ```javascript
-	function myNewFunction(){
-		var testvar = 40;
-		testvar += 40
-		return testvar;
-	}
-	console.log(testvar);
-	// gives error because testvar is not defined globally. 
-	console.log(myNewFunction());
-	// returns 80
+function myNewFunction(){
+	var testvar = 40;
+	testvar += 40
+	return testvar;
+}
+console.log(testvar);
+// gives error because testvar is not defined globally. 
+console.log(myNewFunction());
+// returns 80
 ```
 
 In C, you have to tell the computer what value the function will return. These declarations are the same as variables except there's one more:
 * void. void means that the function will return nothing
 
 ```c
-		float distance(){
-				// this function will measure distance as a decimal number
-				return distance;
-		}
-		void turnRight(){
-				// turn right
-				// you don't have to return anything. 
-		}
+float distance(){
+	// this function will measure distance as a decimal number
+	return distance;
+}
+void turnRight(){
+	// turn right
+	// you don't have to return anything. 
+}
 ```
 
 Returning a value allows the function to share its results with other parts of the code, for example, a function to calculate distance and convert distance into number of tire rotations can pass the number of tire rotations to another function that makes the robot move forward for a certain distance. 
@@ -409,18 +408,18 @@ Functions can also take in inputs. These inputs are called parameters. You just 
 
 General form:
 ```javascript
-	function myNewFunction(parameter1){
-		// you can use the parameter and modify it. 
-	}
+function myNewFunction(parameter1){
+	// you can use the parameter and modify it. 
+}
 ```
 
 Example:
 ```javascript
-	function addTen(number){
-		return number + 10;
-	}
-	console.log(addTen(50));
-	// gives 60
+function addTen(number){
+	return number + 10;
+}
+console.log(addTen(50));
+// gives 60
 ```
 In this function, we tell the computer "I want to make a function named addTen. I also want this function to take one input named number". Then we tell the computer that when we call this function (calling a function means typing out the function to use it) we take the parameter named number, and we add ten and return that number. 
 
@@ -429,9 +428,9 @@ So when we call that function with the input 50, the function takes 50 and adds 
 You can have multiple parameters, just type them out and separate them with a comma.
 
 ```javascript
-	function addTogether(number1, number2){
-		return number1 + number2;
-	}
+function addTogether(number1, number2){
+	return number1 + number2;
+}
 ```
 
 ## Organizing your code
@@ -449,9 +448,9 @@ In C, you type `//` for a single line comment.
 You type `/*` and `*/` for a multiline comment.
 
 ```c
-	// I am a single line comment!
-	/* I am a multiline comment
-	look at my multi-ness */
+// I am a single line comment!
+/* I am a multiline comment
+look at my multi-ness */
 ```
 
 Okay, I think that's it, this is the really huge guide, and then the cheatsheet will be posted later. 
