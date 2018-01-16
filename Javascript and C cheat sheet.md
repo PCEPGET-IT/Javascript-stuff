@@ -6,6 +6,8 @@ Hi everyone! This is the definitive cheat sheet that will cover everything we di
 * / is division
 * \* is multiplication
 * % gives the remainder when you divide by a number
+* \++ increments the integer by 1
+* \-- decrements the integer by 1
 
 ```javascript
 console.log(600 + 700);
@@ -32,7 +34,8 @@ So there are several different types of variables in C and Javascript
 * Float, which is a decimal number
 * Double, which is a decimal number like a float, but it has more decimal places
 * Character(C language specific), is just one letter. To be fair, you don't really need words for Robots
-* String(Most other languages have this), is a bunch of words and it's called a string because it's a *string* of characters. (hilarious) 
+* String(Javascript), is a bunch of words and it's called a string because it's a *string* of characters. (hilarious) 
+* Boolean(Javascript) is a true or false value
 
 For Javascript, all you have to do to declare a variable is to type "**var**" and the name of the variable. Note that the variable name can't start with a number, but you can put a number in the name somewhere else.
 
@@ -48,6 +51,9 @@ var money = 292.38;
 
 // String
 var newstring = "I am a string!";
+
+// Boolean
+var lie_detected = true;
 ```
 
 For C, you have to tell the computer what kind of variable you're declaring. 
@@ -107,9 +113,54 @@ The equal sign is a way to put a value into the variable. The left side is the v
 
 By using the variable name in the right side, we are telling the computer to take the value of the variable, change the value, and then assign the new value to the variable again. So instead of just declaring `money = 400`, we can decrease the amount of money by 200 and it doesn't matter what the original value is. 
 
+For math operators you can shorten the syntax.
+Instead of
+```javascript
+money = money - 200;
+```
+You can just put the math operator before the equal sign and just put the number:
+```javascript
+money -= 200
+// this is the same thing!
+```
+
+## Conditionals
+
+What is a condition? A condition tests whether something is true or false. It will seem kind of silly right now, but it is useful later.
+
+So what kind of tests can we do?
+Well you can compare two different numbers.
+* == tests whether two things are equal
+* > tests if one thing is greater than the other
+* >= tests if one thing is greater than or equal to the other thing
+* < tests if one thing is greater than the other
+* <= tests if one thing is greater than or equal to the other thing
+* != tests if one thing is not equal to the other thing
+
+If the two numbers make the statement true, then the condition is true. Otherwise, it is false.
+
+In javascript: 
+```javascript
+    console.log(5 < 4)
+    // false
+    console.log(4 < 5)
+    // true
+```
+
+I was really tempted to use the word "return" so I'll define it here. Return means that the program gives that number back to you or another function. 
+
+## and, or logic
+
 ## if statements
 ```javascript 
 if(condition is true){
   put code here
 } 
 ```
+
+## while loops
+
+## for loops
+
+## functions
+
