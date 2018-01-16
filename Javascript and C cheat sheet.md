@@ -5,6 +5,24 @@ Hi everyone! This is the definitive cheat sheet that will cover everything we di
 * \- is subtraction
 * / is division
 * \* is multiplication
+* % gives the remainder when you divide by a number
+
+```javascript
+console.log(600 + 700);
+// gives 1300
+
+console.log(600 - 700);
+// gives -100
+
+console.log(400 / 2);
+// gives 200
+
+console.log(2 * 4);
+// gives 8
+
+console.log(5 % 2);
+// gives 1 because 5 divided by 2 is 2 with a remainder of 1
+```
 
 ## Variables
 Variables store information so that you can use information without typing it over and over. Variables also can change throughout your program.
@@ -69,6 +87,25 @@ You can change the variable number later by writing the variable name and writin
 ```javascript
 money = 600;
 ```
+
+We can also use math operators to change the value of the variables
+
+In this example, we set the variable money to 600 no matter what the original value of the variable was:
+```javascript
+money = 600;
+```
+
+Let's say that we just wanted to decrease the amount of money by $200 because we bought a TV:
+```javascript
+money = money - 200;
+console.log(money);
+// gives 400
+```
+
+What's going on here?
+The equal sign is a way to put a value into the variable. The left side is the variable name, and the right side is the new value that you're changing the variable into. 
+
+By using the variable name in the right side, we are telling the computer to take the value of the variable, change the value, and then assign the new value to the variable again. So instead of just declaring `money = 400`, we can decrease the amount of money by 200 and it doesn't matter what the original value is. 
 
 ## if statements
 ```javascript 
