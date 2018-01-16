@@ -1,1 +1,1 @@
-`javascript if(condition){code} `
+```javascript if(condition){code} ```
