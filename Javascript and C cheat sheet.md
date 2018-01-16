@@ -10,7 +10,7 @@ So there are several different types of variables in C and Javascript
 * Character(C language specific), is just one byte, probably just a letter. You don't really need words for Robots
 * String(Most other languages have this), is a bunch of words and it's called a string because it's a *string* of characters. (hilarious) 
 
-For Javascript, all you have to do to declare a variable is to type "var" and the name of the variable. Note that the variable name can't start with a number, but you can put a number in the name somewhere else.
+For Javascript, all you have to do to declare a variable is to type "**var**" and the name of the variable. Note that the variable name can't start with a number, but you can put a number in the name somewhere else.
 
 Quick Examples for javascript:
 ```javascript
@@ -23,6 +23,13 @@ var money = 292.38
 // String
 var newstring = "I am a string!"
 ```
+
+For C, you have to tell the computer what kind of variable you're declaring. 
+
+* **int** for integer
+* **float** for float
+* **double** for double
+* **char** for character
 
 ## if statements
 ```javascript 
