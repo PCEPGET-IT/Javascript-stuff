@@ -1,10 +1,10 @@
 Hi everyone! This is the definitive cheat sheet that will cover everything we did in the last two weeks of coding lessons and hopefully make javascript easier to understand.
 
 ## Doing Math in Javascript
-* + is addition
-* - is subtraction
+* \+ is addition
+* \- is subtraction
 * / is division
-* * is multiplication
+* \* is multiplication
 
 ## Variables
 Variables store information so that you can use information without typing it over and over. Variables also can change throughout your program.
