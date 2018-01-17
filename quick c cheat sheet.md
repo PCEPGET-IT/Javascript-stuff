@@ -51,6 +51,7 @@ number = number + 10;
 number -= 10;
 // is the same as:
 number = number - 10;
+
 number *= 2;
 // is the same as:
 number = number * 2;
@@ -62,6 +63,7 @@ number = number / 2;
 number++;
 // is the same as:
 number = number + 1;
+
 number--; 
 // is the same as:
 number = number - 1;
