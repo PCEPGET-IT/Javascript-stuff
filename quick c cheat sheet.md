@@ -1,5 +1,7 @@
 The quick cheat sheet
 
+# General C stuff
+
 ## Doing Math in C
 * \+ is addition
 * \- is subtraction
@@ -251,5 +253,66 @@ You can have multiple parameters, just type them out and separate them with a co
 ```c
 int addTogether(number1, number2){
 	return number1 + number2;
+}
+```
+
+# RobotC specific stuff
+
+## Motors/Moving
+
+```c
+motor[motorA] = 25; // setting the power of motor A to 25
+motor[motorB] = -30; // sets the power of motor B to go backwards at 30
+```
+
+## Waiting
+
+This makes your robot do what it's currently doing for a certain amount of time
+```c
+wait1Msec(milliseconds)
+// put the time you want in milliseconds between the parantheses. 1000 milliseconds = 1 second
+```
+
+## Motor Degrees
+
+This helps measure the amount of degrees a motor has traveled, and it can also reset the encoder when you need a fresh reading. 
+
+Resetting the encoder:
+```c
+nMotorEncoder[motorA] = 0;
+```
+
+Grabbing the value from the encoder:
+```c
+while(nMotorEncoder[motorA] < 180){
+	motor[motorA] = 30;
+}
+```
+This means that "while" the amount of degrees that motor A has traveled is less than 180 degrees, move motor A forward at a power of 30. 
+
+## Sensor Values
+
+Go into the menu of Robot > Motors and Sensor Setup
+Go to Sensors
+Choose your sensor and name the sensor. This is the name you will be using in your program. 
+
+This will access the value of the sensor:
+```c
+SensorValue(sensor_name_here)
+```
+
+Light sensors return a number from 0-100, 0 means no light reflected (black), and 100 means all the light is reflected (aluminum foil).
+
+Touch sensors return 0 or 1, 0 is not pressed, 1 is pressed.
+
+Ultrasonic sensors return a distance, the units are chosen in the Motors and Sensor Setup. 
+
+Example of using SensorValue:
+```c
+// light sensor is named leftLight
+int lightThresh = 35;
+while(SensorValue(leftLight)>lightThresh){
+	motor[motorB] = 25;
+	motor[motorC] = 0;
 }
 ```
