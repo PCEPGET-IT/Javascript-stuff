@@ -1,4 +1,25 @@
+Table of Contents
+
+[General C stuff](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#general-c-stuff)
+* [Doing Math in C](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#doing-math-in-c)
+* [Variables](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#variables)
+* [Conditions](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#conditionals)
+* [AND/OR logic](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#and-or-logic)
+* [If statements](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#if-statements)
+* [Else statements](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#else-statements)
+* [Else If statements](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#else-if-statements)
+* [While loops](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#while-loops)
+* [For loops](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#for-loops)
+* [Functions](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#functions)
+* [Parameters](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#parameters)
+[RobotC stuff](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#robotc-specific-stuff)
+* [Motors](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#motorsmoving)
+* [Wait](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#waiting)
+* [Motor Encoder](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#motor-degrees)
+* [Sensor Values](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#sensor-values)
+
 The quick cheat sheet
+
 
 # General C stuff
 
