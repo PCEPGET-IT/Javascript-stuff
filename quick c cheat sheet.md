@@ -12,6 +12,7 @@ Table of Contents
 * [For loops](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#for-loops)
 * [Functions](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#functions)
 * [Parameters](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#parameters)
+
 [RobotC stuff](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#robotc-specific-stuff)
 * [Motors](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#motorsmoving)
 * [Wait](https://github.com/PCEPGET-IT/Javascript-stuff/blob/master/quick%20c%20cheat%20sheet.md#waiting)
