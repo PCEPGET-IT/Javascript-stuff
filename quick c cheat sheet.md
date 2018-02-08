@@ -292,7 +292,7 @@ motor[motorB] = -30; // sets the power of motor B to go backwards at 30
 This makes your robot do what it's currently doing for a certain amount of time
 ```c
 wait1Msec(milliseconds)
-// put the time you want in milliseconds between the parantheses. 1000 milliseconds = 1 second
+// put the time you want in milliseconds between the parentheses. 1000 milliseconds = 1 second
 ```
 
 ## Motor Degrees
